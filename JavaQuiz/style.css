@@ -1,0 +1,56 @@
+body{
+    text-align: left;
+    }
+
+    #quizarea
+    {
+      position: absolute;
+      margin: auto;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border-radius: 3px;
+      background-image: url(Tiger.jpeg);
+      text-align: left;
+    }
+
+    #question1 {
+      display: none;
+      width: 100%;
+      height: 750px;
+      background-color: blueviolet;
+      justify-content: center;
+    }
+
+    #question2 {
+      display: none;
+      width: 100%;
+      height: 750px;
+      background-color:cadetblue;
+      justify-content: center;
+    }
+
+    #question3 {
+      display: none;
+      width: 100%;
+      height: 750px;
+      background-color:coral;
+      justify-content: center;
+    }
+
+    #question4 {
+      display: none;
+      width: 100%;
+      height: 750px;
+      background-color: cyan;
+      justify-content: center;
+    }
+
+    #results {
+      display: none;
+      width: 100%;
+      height: 750px;
+      background-color:crimson;
+      justify-content: center;
+    }
