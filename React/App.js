@@ -13,8 +13,18 @@ function App() {
     setOperationDisplay(operationDisplay + lastOperator + inputtedValue);
     setDisplay("");
   };
+  const operatorClicked = (event) => {
+    let lastOperator = event.target.value;
+    let inputtedValue = display;
+    setOperationDisplay(operationDisplay * lastOperator * inputtedValue);
+    setDisplay("");
+  };
   const equalClicked = (event) => {
     let result = eval(operationDisplay);
+    setDisplay(result);
+  };
+  const clearClicked = (event) => {
+    let result = clear(operationDisplay);
     setDisplay(result);
   };
   return (
@@ -32,8 +42,17 @@ function App() {
       <button value="/" onClick={operatorClicked}>
         /
       </button>
+      <button value="-" onClick={operatorClicked}>
+        -
+      </button>
+      <button value="*" onClick={operatorClicked}>
+        *
+      </button>
       <button value="=" onClick={equalClicked}>
         =
+      </button>
+      <button value="c" onClick={clearClicked}>
+        c
       </button>
 
       <br />
@@ -43,5 +62,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
